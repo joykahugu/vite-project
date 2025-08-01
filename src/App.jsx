@@ -12,7 +12,9 @@ function App() {
     const items = ['Apple', 'Orange', 'Grape'];
 
   //React Fragments; instead of using div as parent element
+  
   return (
+    
     <>   
      {items.map((item, index) => (
       <React.Fragment key= {index} >
@@ -21,13 +23,14 @@ function App() {
       </React.Fragment>
      ))}
         <h1>App</h1>
-        <Greetings name="John"/>
+      
+        <Greetings name="John"/> 
         <Greetings name="Jane"/> 
         <h1>User Info</h1>
         <UserProfile name='Jane Doe' age={25} isMember= {true}/>
        <Counter />
        <TodoList/>
-    </>   //put elements inside fragments, can call functions more than once
+    </>   //put elements inside fragments, can call functions more than once and can reuse props 
        
         
   )

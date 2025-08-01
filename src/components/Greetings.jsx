@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-
+//name is a prop; props are properties/parameters/arguments 
 function Greetings({name}) {
 
     return (
